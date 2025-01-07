@@ -2,7 +2,7 @@ import React from 'react'
 
 function CounterApp() {
   return (
-    <div>CounterApp</div>
+    <div>Counter App</div>
   )
 }
 
