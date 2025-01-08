@@ -1,12 +1,18 @@
 
-
+import Navbar from "./Components/Navbar"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Form from "./Components/Form";
 function App() {
 
   return (
     <>
-    <h1 className="text-3xl font-bold underline text-center mt-6">
-      Hello world!
-    </h1>
+   <Router>
+       <Navbar/>
+      <Routes>
+        <Route path="/Form" element={<Form/>} />
+        
+      </Routes>
+    </Router>
      
     </>
   )
