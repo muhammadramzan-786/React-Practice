@@ -1,0 +1,30 @@
+.gradient-border {
+    border-bottom: 4px solid transparent; /* For spacing */
+    position: relative;
+    overflow: hidden;
+    }
+    
+    .gradient-border::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -100%; /* Start from left */
+    width: 200%; /* Cover the entire bottom border */
+    height: 4px;
+    background: linear-gradient(
+    to right,
+    #ff7e5f, /* Gradient color 1 */
+    #7b84fe, /* Gradient color 2 */
+    #db264a
+    );
+    animation: moveGradient 3s linear infinite; /* Animation */
+    }
+    
+    @keyframes moveGradient {
+    0% {
+    left: -100%;
+    }
+    100% {
+    left: 100%;
+    }
+    }
